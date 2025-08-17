@@ -8,6 +8,8 @@ import (
 
 func main() {
 
+	fmt.Println("hello world")
+
 	nums1 := []int{1, 2, 1, 4, 2, 3, 4}
 
 	num1 := controlflow.SingleNumber1(nums1)
