@@ -1,4 +1,6 @@
-package controlflow
+package main
+
+import "fmt"
 
 func SingleNumber1(nums []int) int {
 	numMap := make(map[int]int, 0)
@@ -39,14 +41,19 @@ func SingleNumber3(nums []int) int {
 	return result
 }
 
-// func main() {
-// 	nums1 := []int{1, 2, 1, 4, 2, 3, 4}
+func main() {
+	nums1 := []int{1, 2, 1, 4, 2, 3, 4}
 
-// 	num1 := SingleNumber1(nums1)
+	num1 := SingleNumber1(nums1)
 
-// 	num2 := SingleNumber2(nums1)
+	num2 := SingleNumber2(nums1)
 
-// 	fmt.Println("方法singleNumber1数组中只出现一次的数字为:", num1)
+	num3 := SingleNumber3(nums1)
 
-// 	fmt.Println("方法singleNumber2数组中只出现一次的数字为:", num2)
-// }
+	fmt.Println("方法singleNumber1数组中只出现一次的数字为:", num1)
+
+	fmt.Println("方法singleNumber2数组中只出现一次的数字为:", num2)
+
+	fmt.Println("方法singleNumber3数组中只出现一次的数字为:", num3)
+
+}
